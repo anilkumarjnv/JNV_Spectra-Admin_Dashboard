@@ -1,8 +1,10 @@
+
 import React from "react";
 import {
   Monitor,
   ClipboardList,
-  Confetti,
+  // Replace Confetti with PartyPopper which is available
+  PartyPopper,
   FileCheck,
   LayoutGrid,
   MessagesSquare,
@@ -20,7 +22,7 @@ const Index: React.FC = () => {
   const statCards = [
     { count: 3, label: "Available items", icon: <Monitor size={24} /> },
     { count: 2, label: "Planning items", icon: <ClipboardList size={24} /> },
-    { count: 2, label: "Past events", icon: <Confetti size={24} /> },
+    { count: 2, label: "Past events", icon: <PartyPopper size={24} /> },
     { count: 2, label: "Pending & completed", icon: <FileCheck size={24} /> },
     { count: 2, label: "Website sections", icon: <LayoutGrid size={24} /> },
     { count: 2, label: "Client reviews", icon: <MessagesSquare size={24} /> },

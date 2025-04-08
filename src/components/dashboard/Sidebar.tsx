@@ -1,12 +1,14 @@
+
 import React from "react";
 import {
   LayoutDashboard,
   ShoppingCart,
   CalendarClock,
   Calendar,
-  FileInvoice,
   FileText,
   Settings,
+  // Replace FileInvoice with ReceiptText which is available
+  ReceiptText,
 } from "lucide-react";
 
 interface SidebarItemProps {
@@ -48,7 +50,7 @@ const Sidebar: React.FC = () => {
         />
         <SidebarItem icon={<Calendar size={20} />} label="Events Hosted" />
         <SidebarItem
-          icon={<FileInvoice size={20} />}
+          icon={<ReceiptText size={20} />}
           label="Orders & Invoices"
         />
         <SidebarItem icon={<FileText size={20} />} label="Section Content" />
